@@ -1,0 +1,21 @@
+docker run --gpus all -it --rm `
+  --ipc=host `
+  -v "C:\Users\Lin\Desktop\2_code\ssast_hub:/workspace/ssast_hub" `
+  -v "D:\spectrogram_pt_name:/workspace/data/train" `
+  -v "D:\pt_name_val:/workspace/data/val" `
+  ssast_hub_image /bin/bash
+
+cd /workspace/ssast_hub/ssast-main/src
+
+python -W ignore run.py --dataset precomputed \
+--data-train "/workspace/data/train" \
+--data-val "/workspace/data/val" \
+--exp-dir "./exp/test_docker_01" \
+--label-csv "./data/class_labels_indices.csv" \
+--lr 1e-4 --n-epochs 10 --batch-size 24 --save_model False \
+--freqm 0 --timem 0 --mixup 0 --bal none \
+--tstride 16 --fstride 16 --fshape 16 --tshape 16 \
+--dataset_mean -7.4482 --dataset_std 2.4689 \
+--target_length 1024 --num_mel_bins 128 \
+--model_size base --mask_patch 400 --n-print-steps 100 \
+--task pretrain_joint --lr_patience 2 --epoch_iter 4000

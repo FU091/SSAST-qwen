@@ -1,0 +1,24 @@
+{
+ "data": [
+  {
+   "wav": "D:\\FS_SOUND\\Soundscape_Audio-20250428T180906Z-1-001\\Soundscape_Audio\\FS01_20231222_235400.wav",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "D:\\FS_SOUND\\Soundscape_Audio-20250428T180906Z-1-001\\Soundscape_Audio\\FS01_20231230_220000.wav",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "D:\\FS_SOUND\\Soundscape_Audio-20250428T180906Z-1-010\\Soundscape_Audio\\FS02_20230409_200000.wav",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "D:\\FS_SOUND\\Soundscape_Audio-20250428T180906Z-1-010\\Soundscape_Audio\\FS02_20230409_210000.wav",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "D:\\FS_SOUND\\Soundscape_Audio-20250428T180906Z-1-010\\Soundscape_Audio\\FS02_20230409_230000.wav",
+   "labels": "/m/09x0r"
+  }
+ ]
+}
