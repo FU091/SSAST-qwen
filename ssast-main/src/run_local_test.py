@@ -22,7 +22,7 @@ import numpy as np
 from traintest import train, validate
 from traintest_mask import trainmask
 
-print("I am process %s, running on %s: starting (%s)" % (os.getpid(), os.uname()[1], time.asctime()))
+print("I am process %s, running on %s: starting (%s)" % (os.getpid(), os.uname()[1] if hasattr(os, 'uname') else 'localhost', time.asctime()))
 
 parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 parser.add_argument("--data-train", type=str, default=None, help="training data json")
@@ -42,7 +42,7 @@ parser.add_argument('--lr', '--learning-rate', default=0.001, type=float, metava
 parser.add_argument('--warmup', help='if use warmup learning rate scheduler', type=ast.literal_eval, default='True')
 parser.add_argument("--optim", type=str, default="adam", help="training optimizer", choices=["sgd", "adam"])
 parser.add_argument('-b', '--batch-size', default=12, type=int, metavar='N', help='mini-batch size')
-parser.add_argument('-w', '--num-workers', default=16, type=int, metavar='NW', help='# of workers for dataloading (default: 32)')
+parser.add_argument('-w', '--num-workers', default=8, type=int, metavar='NW', help='# of workers for dataloading (default: 32)')
 parser.add_argument("--n-epochs", type=int, default=1, help="number of maximum training epochs")
 # only used in pretraining stage or from-scratch fine-tuning experiments
 parser.add_argument("--lr_patience", type=int, default=1, help="how many epoch to wait to reduce lr if mAP doesn't improve")
@@ -56,7 +56,7 @@ parser.add_argument('--timem', help='time mask max length', type=int, default=0)
 parser.add_argument("--mixup", type=float, default=0, help="how many (0-1) samples need to be mixup during training")
 parser.add_argument("--bal", type=str, default=None, help="use balanced sampling or not")
 # the stride used in patch spliting, e.g., for patch size 16*16, a stride of 16 means no overlapping, a stride of 10 means overlap of 6.
-# during self-supervised pretraining stage, no patch split overlapping is used (to aviod shortcuts), i.e., fstride=fshape and tstride=tshape
+# during self-supervised pretraining stage, no patch split overlapping is used (to aviod shortcuts), i.e., fstride=fshape and tshape=tshape
 # during fine-tuning, using patch split overlapping (i.e., smaller {f,t}stride than {f,t}shape) improves the performance.
 # it is OK to use different {f,t} stride in pretraining and finetuning stages (though fstride is better to keep the same)
 # but {f,t}stride in pretraining and finetuning stages must be consistent.
@@ -114,8 +114,8 @@ if args.dataset == 'precomputed':
     # Use the provided data-train and data-val as directories for .pt files
     # and look for corresponding JSON files in project root for index-to-filename mapping
     train_json_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "combined_train_data.json")
-    val_json_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "test.json")  # or validation json file
-
+    val_json_path = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "fs_sound_list.json")  # 尝试使用fs_sound_list.json作为验证集
+    
     # Check if JSON files exist for mapping
     if os.path.exists(train_json_path):
         print(f"Using training JSON file for mapping: {train_json_path}")
@@ -182,6 +182,25 @@ else:
                        input_fdim=args.num_mel_bins, input_tdim=args.target_length, model_size=args.model_size, pretrain_stage=False,
                        load_pretrained_mdl_path=args.pretrained_mdl_path)
 
+# Add CPU fallback if CUDA is not available or has issues
+if torch.cuda.is_available():
+    try:
+        # Test CUDA availability by creating a simple tensor operation
+        test_tensor = torch.randn(1, 1).cuda()
+        audio_model = audio_model.cuda()
+        print("Using CUDA for training")
+        device = torch.device("cuda")
+    except RuntimeError as e:
+        print(f"CUDA error detected: {e}")
+        print("Falling back to CPU")
+        device = torch.device("cpu")
+        audio_model = audio_model.to(device)
+else:
+    print("CUDA not available, using CPU")
+    device = torch.device("cpu")
+    audio_model = audio_model.to(device)
+
+# Wrap with DataParallel if available
 if not isinstance(audio_model, torch.nn.DataParallel):
     audio_model = torch.nn.DataParallel(audio_model)
 
@@ -196,41 +215,7 @@ if 'pretrain' not in args.task:
     train(audio_model, train_loader, val_loader, args)
 else:
     print('Now starting self-supervised pretraining for {:d} epochs'.format(args.n_epochs))
-
-    # Add CUDA error handling and fallback to CPU if needed
-    try:
-        trainmask(audio_model, train_loader, val_loader, args)
-    except RuntimeError as e:
-        if "CUDA error" in str(e) or "no kernel image" in str(e).lower():
-            print(f"CUDA error encountered: {e}")
-            print("Attempting to continue with CPU...")
-
-            # Recreate model on CPU
-            if 'pretrain' in args.task:
-                cluster = (args.num_mel_bins != args.fshape)
-                if cluster == True:
-                    print('The num_mel_bins {:d} and fshape {:d} are different, not masking a typical time frame, using cluster masking.'.format(args.num_mel_bins, args.fshape))
-                else:
-                    print('The num_mel_bins {:d} and fshape {:d} are same, masking a typical time frame, not using cluster masking.'.format(args.num_mel_bins, args.fshape))
-                # no label dimension needed as it is self-supervised, fshape=fstride and tshape=tstride
-                audio_model_cpu = ASTModel(fshape=args.fshape, tshape=args.tshape, fstride=args.fshape, tshape=args.tshape,
-                                   input_fdim=args.num_mel_bins, input_tdim=args.target_length, model_size=args.model_size, pretrain_stage=True)
-            # in the fine-tuning stage
-            else:
-                audio_model_cpu = ASTModel(label_dim=args.n_class, fshape=args.fshape, tshape=args.tshape, fstride=args.fstride, tshape=args.tstride,
-                                   input_fdim=args.num_mel_bins, input_tdim=args.target_length, model_size=args.model_size, pretrain_stage=False,
-                                   load_pretrained_mdl_path=args.pretrained_mdl_path)
-
-            # Move to CPU and wrap with DataParallel
-            audio_model_cpu = audio_model_cpu.to(torch.device("cpu"))
-            if not isinstance(audio_model_cpu, torch.nn.DataParallel):
-                audio_model_cpu = torch.nn.DataParallel(audio_model_cpu)
-
-            print("Using CPU for training")
-            trainmask(audio_model_cpu, train_loader, val_loader, args)
-        else:
-            # Re-raise if it's a different kind of error
-            raise e
+    trainmask(audio_model, train_loader, val_loader, args)
 
 # if the dataset has a seperate evaluation set (e.g., speechcommands), then select the model using the validation set and eval on the evaluation set.
 # this is only for fine-tuning
@@ -262,4 +247,3 @@ if args.data_eval != None:
     print("Accuracy: {:.6f}".format(eval_acc))
     print("AUC: {:.6f}".format(eval_mAUC))
     np.savetxt(args.exp_dir + '/eval_result.csv', [val_acc, val_mAUC, eval_acc, eval_mAUC])
-
