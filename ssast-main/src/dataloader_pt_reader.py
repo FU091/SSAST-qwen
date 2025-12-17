@@ -5,14 +5,27 @@ import json
 import re
 
 class PrecomputedDataset(Dataset):
-    def __init__(self, data_dir, dataset_json_file=None):
+    def __init__(self, data_dir=None, dataset_json_file=None, audio_conf=None):
         """
         讀取預先計算好的 .pt 檔案 (包含 fbank 和 label)
         :param data_dir: 存放 .pt 檔案的資料夾路徑 (例如 "D:\\AS")
         :param dataset_json_file: JSON file path that contains the mapping (optional)
+        :param audio_conf: audio configuration dictionary
         """
-        self.data_dir = data_dir
-        self.config_path = os.path.join(data_dir, "dataset_config.pt")
+        # If data_dir is None but passed in audio_conf, use it from audio_conf (backward compatibility)
+        if data_dir is None and audio_conf is not None and 'data_dir' in audio_conf:
+            self.data_dir = audio_conf['data_dir']
+        else:
+            self.data_dir = data_dir
+
+        if self.data_dir is None:
+            # If no data_dir provided, try to infer from the JSON file directory
+            if dataset_json_file and os.path.exists(dataset_json_file):
+                self.data_dir = os.path.dirname(dataset_json_file)
+            else:
+                raise ValueError("Either data_dir must be provided or dataset_json_file must exist for directory inference")
+
+        self.config_path = os.path.join(self.data_dir, "dataset_config.pt")
 
         # If a JSON file is provided, create a mapping from index to filename
         if dataset_json_file and os.path.exists(dataset_json_file):
@@ -46,7 +59,7 @@ class PrecomputedDataset(Dataset):
         else:
             # 如果找不到設定檔，則掃描資料夾計算 .pt 檔案數量 (排除 config 檔)
             print("Config file not found, scanning directory...")
-            files = [f for f in os.listdir(data_dir) if f.endswith('.pt') and f != "dataset_config.pt"]
+            files = [f for f in os.listdir(self.data_dir) if f.endswith('.pt') and f != "dataset_config.pt"]
             self.length = len(files)
             print(f"Scanned {self.length} .pt files.")
             self.valid_indices = list(range(self.length))  # All indices are valid when using directory scan
@@ -137,7 +150,7 @@ class PrecomputedDataset(Dataset):
 # ==========================================
 if __name__ == "__main__":
     # 設定你的資料夾路徑
-    DATA_DIR = r"D:\spectrogram_pt"
+    DATA_DIR = r"D:\spectrogram_pt_name"
     
     # 1. 實例化 Dataset
     dataset = PrecomputedDataset(DATA_DIR)
