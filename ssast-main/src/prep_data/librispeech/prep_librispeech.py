@@ -49,9 +49,10 @@ def combine_json(file_list, name='librispeech_tr960'):
 
 # 1. 處理 GW_audio
 # 使用 r'...' (raw string) 避免 Windows 路徑中的反斜線 \ 被當成跳脫字元
-path_gw = r'D:\GW_audio'
-walk(path_gw, 'gw_audio_list')  # 產出 gw_audio_list.json
+path_gw = r"D:\Audio_Output"
+walk(path_gw, '6s_audio_list')  # 產出 gw_audio_list.json
 
+"""
 # 2. 處理 FS_SOUND
 path_fs = r'D:\FS_SOUND'
 walk(path_fs, 'fs_sound_list')  # 產出 fs_sound_list.json
@@ -59,3 +60,4 @@ walk(path_fs, 'fs_sound_list')  # 產出 fs_sound_list.json
 # 3. 合併這兩個清單
 # 最終會產出一個名為 "combined_train_data.json" 的檔案供模型訓練使用
 combine_json(['gw_audio_list', 'fs_sound_list'], name='combined_train_data')
+"""

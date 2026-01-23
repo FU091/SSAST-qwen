@@ -24,11 +24,11 @@ print(f"當前目錄為: {PROJECT_ROOT}")
 
 # 設定輸出資料夾 (請確保此路徑所在的硬碟有足夠空間)
 # 預計大小：17萬筆 x 250KB ≈ 40~50 GB
-OUTPUT_DIR = r"D:\spectrogram_pt_name"
+OUTPUT_DIR = r"D:\spectrogram_6s_pt_name"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 label_csv = os.path.join(PROJECT_ROOT, "class_labels_indices.csv")
-dataset_json_file = os.path.join(PROJECT_ROOT, "combined_train_data.json")
+dataset_json_file = os.path.join(PROJECT_ROOT, "6s_audio_list.json")
 
 # --- 2. 初始化 Dataset ---
 # 這裡使用原始的 AudioDataset 來負責讀取音檔、正規化、Masking

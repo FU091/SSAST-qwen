@@ -1,0 +1,2190 @@
+{
+ "data": [
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231019_013000.pt",
+   "labels": [
+    "蟲",
+    "哺乳類"
+   ],
+   "weights": [
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231108_233000.pt",
+   "labels": [
+    "蟲",
+    "哺乳類",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230806_212700.pt",
+   "labels": [
+    "蟲",
+    "蛙",
+    "哺乳類"
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240201_163600.pt",
+   "labels": [
+    "蟬",
+    "哺乳類",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230822_182400.pt",
+   "labels": [
+    "蟲",
+    "蛙",
+    "哺乳類"
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240801_154200.pt",
+   "labels": [
+    "蟬",
+    "鳥",
+    "哺乳類",
+    "航空器"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230216_225700.pt",
+   "labels": [
+    "安靜"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230303_140000.pt",
+   "labels": [
+    "鳥",
+    "安靜"
+   ],
+   "weights": [
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20250101_060300.pt",
+   "labels": [
+    "安靜"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230128_134200.pt",
+   "labels": [
+    "安靜"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230205_121800.pt",
+   "labels": [
+    "鳥",
+    "安靜"
+   ],
+   "weights": [
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230129_011200.pt",
+   "labels": [
+    "安靜"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230911_004200.pt",
+   "labels": [
+    "流水"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230614_104500.pt",
+   "labels": [
+    "蟬",
+    "流水"
+   ],
+   "weights": [
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230618_054200.pt",
+   "labels": [
+    "蟬",
+    "鳥",
+    "流水"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230904_194200.pt",
+   "labels": [
+    "流水"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231103_134200.pt",
+   "labels": [
+    "流水"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230909_143300.pt",
+   "labels": [
+    "流水"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231120_164800.pt",
+   "labels": [
+    "蟲",
+    "流水"
+   ],
+   "weights": [
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230517_100000.pt",
+   "labels": [
+    "鳥",
+    "風",
+    "航空器"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231129_110900.pt",
+   "labels": [
+    "蟲",
+    "人聲",
+    "航空器"
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240802_093000.pt",
+   "labels": [
+    "蟬",
+    "蟲",
+    "航空器"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230919_080000.pt",
+   "labels": [
+    "蟬",
+    "航空器"
+   ],
+   "weights": [
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230301_073300.pt",
+   "labels": [
+    "鴞",
+    "雨",
+    "航空器"
+   ],
+   "weights": [
+    0.6,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230914_095400.pt",
+   "labels": [
+    "蟬",
+    "蟲",
+    "鳥",
+    "人聲",
+    "風",
+    "航空器"
+   ],
+   "weights": [
+    0.6,
+    1.0,
+    0.6,
+    1.0,
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240727_202700.pt",
+   "labels": [
+    "蟲",
+    "蛙",
+    "雨",
+    "航空器"
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231024_130000.pt",
+   "labels": [
+    "鳥",
+    "風",
+    "航空器"
+   ],
+   "weights": [
+    0.6,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240810_191800.pt",
+   "labels": [
+    "蟲",
+    "蛙",
+    "航空器"
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230517_170300.pt",
+   "labels": [
+    "蟲",
+    "鳥",
+    "航空器"
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230406_204200.pt",
+   "labels": [
+    "蟲",
+    "蛙",
+    "航空器"
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230811_050900.pt",
+   "labels": [
+    "蟬",
+    "蟲",
+    "航空器"
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230302_103900.pt",
+   "labels": [
+    "人聲"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231101_105400.pt",
+   "labels": [
+    "蟲",
+    "人聲"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231125_094500.pt",
+   "labels": [
+    "鳥",
+    "人聲",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230914_145400.pt",
+   "labels": [
+    "蟬",
+    "蟲",
+    "人聲",
+    "風"
+   ],
+   "weights": [
+    0.6,
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231230_120000.pt",
+   "labels": [
+    "人聲",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231127_124500.pt",
+   "labels": [
+    "蟲",
+    "鳥",
+    "人聲",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231118_135100.pt",
+   "labels": [
+    "蟲",
+    "鳥",
+    "人聲",
+    "風"
+   ],
+   "weights": [
+    0.6,
+    0.6,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230321_120000.pt",
+   "labels": [
+    "人聲",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230307_090000.pt",
+   "labels": [
+    "鳥",
+    "人聲",
+    "風"
+   ],
+   "weights": [
+    0.6,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240604_113600.pt",
+   "labels": [
+    "蟬",
+    "鳥",
+    "人聲"
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230823_130000.pt",
+   "labels": [
+    "蟬",
+    "蟲",
+    "人聲",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    0.6,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231230_130000.pt",
+   "labels": [
+    "人聲",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230722_120000.pt",
+   "labels": [
+    "蟬",
+    "人聲"
+   ],
+   "weights": [
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230219_050000.pt",
+   "labels": [
+    "鴞",
+    "蛙",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230219_010000.pt",
+   "labels": [
+    "鴞",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240824_044200.pt",
+   "labels": [
+    "蟲",
+    "鴞",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230307_030000.pt",
+   "labels": [
+    "鴞"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230807_000900.pt",
+   "labels": [
+    "蟲",
+    "鴞"
+   ],
+   "weights": [
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230307_210000.pt",
+   "labels": [
+    "蟲",
+    "鴞",
+    "蛙"
+   ],
+   "weights": [
+    0.6,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20250101_060600.pt",
+   "labels": [
+    "鴞"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230929_223000.pt",
+   "labels": [
+    "蟲",
+    "鴞",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230301_204800.pt",
+   "labels": [
+    "鴞",
+    "蛙",
+    "風"
+   ],
+   "weights": [
+    0.6,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230322_210000.pt",
+   "labels": [
+    "蟲",
+    "鴞",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230322_230000.pt",
+   "labels": [
+    "鴞",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240423_023000.pt",
+   "labels": [
+    "蟲",
+    "鴞"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230322_200000.pt",
+   "labels": [
+    "蟲",
+    "鴞"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240601_171200.pt",
+   "labels": [
+    "蟬",
+    "鳥"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230428_063300.pt",
+   "labels": [
+    "鳥"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230718_080000.pt",
+   "labels": [
+    "蟬",
+    "蟲",
+    "鳥"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230413_063900.pt",
+   "labels": [
+    "鳥",
+    "風"
+   ],
+   "weights": [
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240808_082400.pt",
+   "labels": [
+    "蟬",
+    "鳥"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230211_170900.pt",
+   "labels": [
+    "鳥",
+    "風"
+   ],
+   "weights": [
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230518_051800.pt",
+   "labels": [
+    "蟲",
+    "鳥"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231227_093000.pt",
+   "labels": [
+    "鳥"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231024_170000.pt",
+   "labels": [
+    "蟲",
+    "鳥",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230322_100000.pt",
+   "labels": [
+    "鳥",
+    "風"
+   ],
+   "weights": [
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230115_150000.pt",
+   "labels": [
+    "鳥",
+    "雨"
+   ],
+   "weights": [
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240803_145400.pt",
+   "labels": [
+    "蟬",
+    "鳥"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231121_160000.pt",
+   "labels": [
+    "鳥",
+    "風"
+   ],
+   "weights": [
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230307_070000.pt",
+   "labels": [
+    "鳥"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230218_065100.pt",
+   "labels": [
+    "鳥",
+    "雨"
+   ],
+   "weights": [
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231230_110000.pt",
+   "labels": [
+    "鳥",
+    "風"
+   ],
+   "weights": [
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230809_100300.pt",
+   "labels": [
+    "蟲",
+    "鳥",
+    "風"
+   ],
+   "weights": [
+    0.6,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231024_080000.pt",
+   "labels": [
+    "蟲",
+    "鳥"
+   ],
+   "weights": [
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230409_100000.pt",
+   "labels": [
+    "鳥"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230323_161200.pt",
+   "labels": [
+    "鳥",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240809_094800.pt",
+   "labels": [
+    "蟬",
+    "鳥",
+    "風"
+   ],
+   "weights": [
+    0.6,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230409_150000.pt",
+   "labels": [
+    "鳥"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230322_090000.pt",
+   "labels": [
+    "鳥",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230524_080000.pt",
+   "labels": [
+    "蟲",
+    "鳥",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230520_180000.pt",
+   "labels": [
+    "蟲",
+    "鳥",
+    "風",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230518_150600.pt",
+   "labels": [
+    "蟬",
+    "蟲",
+    "鳥",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230417_161200.pt",
+   "labels": [
+    "蟬",
+    "鳥",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230502_161200.pt",
+   "labels": [
+    "蟬",
+    "蟲",
+    "鳥"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230826_175700.pt",
+   "labels": [
+    "蟬"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230702_105400.pt",
+   "labels": [
+    "蟬"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230718_170000.pt",
+   "labels": [
+    "蟬",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230707_174500.pt",
+   "labels": [
+    "蟬",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230620_130000.pt",
+   "labels": [
+    "蟬"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230919_070000.pt",
+   "labels": [
+    "蟬"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230919_170000.pt",
+   "labels": [
+    "蟬",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230616_142700.pt",
+   "labels": [
+    "蟬"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230718_130000.pt",
+   "labels": [
+    "蟬",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230724_051800.pt",
+   "labels": [
+    "蟬",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230620_110000.pt",
+   "labels": [
+    "蟬"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230724_181200.pt",
+   "labels": [
+    "蟬"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240723_121200.pt",
+   "labels": [
+    "蟬",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230919_090000.pt",
+   "labels": [
+    "蟬",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230615_171800.pt",
+   "labels": [
+    "蟬",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240518_142100.pt",
+   "labels": [
+    "蟬",
+    "蟲"
+   ],
+   "weights": [
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230703_125700.pt",
+   "labels": [
+    "蟬"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230607_160600.pt",
+   "labels": [
+    "蟬"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230620_050000.pt",
+   "labels": [
+    "蟬"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240826_133600.pt",
+   "labels": [
+    "蟬",
+    "蛙",
+    "風"
+   ],
+   "weights": [
+    0.6,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230718_080000.pt",
+   "labels": [
+    "蟬"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230718_062100.pt",
+   "labels": [
+    "蟬",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230806_182700.pt",
+   "labels": [
+    "蟬"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240417_151500.pt",
+   "labels": [
+    "蟬",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230918_122100.pt",
+   "labels": [
+    "蟬",
+    "風"
+   ],
+   "weights": [
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230619_143000.pt",
+   "labels": [
+    "蟬"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230611_131500.pt",
+   "labels": [
+    "蟬"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230829_115700.pt",
+   "labels": [
+    "蟬",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230804_042100.pt",
+   "labels": [
+    "蟲",
+    "風"
+   ],
+   "weights": [
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231230_210000.pt",
+   "labels": [
+    "蟲",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230124_102400.pt",
+   "labels": [
+    "風",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231226_145100.pt",
+   "labels": [
+    "風"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230115_020000.pt",
+   "labels": [
+    "蟲",
+    "蛙",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230115_050000.pt",
+   "labels": [
+    "蟲",
+    "風"
+   ],
+   "weights": [
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230115_030000.pt",
+   "labels": [
+    "風"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230210_010900.pt",
+   "labels": [
+    "蛙",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231024_110000.pt",
+   "labels": [
+    "風"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230418_161500.pt",
+   "labels": [
+    "蟲",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231230_180000.pt",
+   "labels": [
+    "蟲",
+    "蛙",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231024_180000.pt",
+   "labels": [
+    "蟲",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230124_163000.pt",
+   "labels": [
+    "風",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230219_144800.pt",
+   "labels": [
+    "風",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231226_215400.pt",
+   "labels": [
+    "風"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230127_225100.pt",
+   "labels": [
+    "風"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231206_223900.pt",
+   "labels": [
+    "蟲",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231121_050000.pt",
+   "labels": [
+    "蟲",
+    "蛙",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230125_124500.pt",
+   "labels": [
+    "風"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231121_230000.pt",
+   "labels": [
+    "蟲",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231121_210000.pt",
+   "labels": [
+    "蟲",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231024_150000.pt",
+   "labels": [
+    "蟲",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230804_041200.pt",
+   "labels": [
+    "蟲",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231121_080000.pt",
+   "labels": [
+    "蟲",
+    "風"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231005_005100.pt",
+   "labels": [
+    "雨"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230219_170000.pt",
+   "labels": [
+    "雨"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240816_195700.pt",
+   "labels": [
+    "蟲",
+    "蛙",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231221_040600.pt",
+   "labels": [
+    "雨"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240125_004500.pt",
+   "labels": [
+    "雨"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230223_164200.pt",
+   "labels": [
+    "雨"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231024_220000.pt",
+   "labels": [
+    "蟲",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230812_000600.pt",
+   "labels": [
+    "蟲",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230203_201200.pt",
+   "labels": [
+    "雨"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230109_145100.pt",
+   "labels": [
+    "雨"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230628_221200.pt",
+   "labels": [
+    "蟲",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230818_192700.pt",
+   "labels": [
+    "蟲",
+    "蛙",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230115_140000.pt",
+   "labels": [
+    "雨"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230119_021200.pt",
+   "labels": [
+    "雨"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230703_190900.pt",
+   "labels": [
+    "蟲",
+    "蛙",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230212_034800.pt",
+   "labels": [
+    "蛙",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230219_180000.pt",
+   "labels": [
+    "雨"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230227_032100.pt",
+   "labels": [
+    "雨"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230111_215100.pt",
+   "labels": [
+    "雨"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230908_040000.pt",
+   "labels": [
+    "蟲",
+    "蛙",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230503_012700.pt",
+   "labels": [
+    "蟲",
+    "蛙",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    0.6,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240606_033300.pt",
+   "labels": [
+    "蟲",
+    "蛙",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230401_225700.pt",
+   "labels": [
+    "蛙",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230115_150000.pt",
+   "labels": [
+    "雨"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230529_213900.pt",
+   "labels": [
+    "蟲",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230115_100000.pt",
+   "labels": [
+    "雨"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230416_024500.pt",
+   "labels": [
+    "雨"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230530_011500.pt",
+   "labels": [
+    "蟲",
+    "雨"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230224_180000.pt",
+   "labels": [
+    "雨"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231121_190000.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    0.6
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230630_002700.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230618_215700.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230614_023600.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230810_003900.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230420_183300.pt",
+   "labels": [
+    "蛙"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230307_000000.pt",
+   "labels": [
+    "蛙"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240621_203300.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230705_031500.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230624_014500.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230625_222400.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230409_180000.pt",
+   "labels": [
+    "蛙"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231121_200000.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230510_191800.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230823_230000.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230801_214500.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230418_030900.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230810_020600.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230618_223300.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230429_010900.pt",
+   "labels": [
+    "蛙"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230601_215100.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230720_201200.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230815_230000.pt",
+   "labels": [
+    "蟲",
+    "蛙"
+   ],
+   "weights": [
+    1.0,
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230919_230000.pt",
+   "labels": [
+    "蟲"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230722_034800.pt",
+   "labels": [
+    "蟲"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231019_203000.pt",
+   "labels": [
+    "蟲"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230925_043600.pt",
+   "labels": [
+    "蟲"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230627_203900.pt",
+   "labels": [
+    "蟲"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230711_233000.pt",
+   "labels": [
+    "蟲"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231207_190300.pt",
+   "labels": [
+    "蟲"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231218_234800.pt",
+   "labels": [
+    "蟲"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230627_215100.pt",
+   "labels": [
+    "蟲"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231116_195100.pt",
+   "labels": [
+    "蟲"
+   ],
+   "weights": [
+    1.0
+   ]
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231129_075400.pt",
+   "labels": [
+    "蟲"
+   ],
+   "weights": [
+    1.0
+   ]
+  }
+ ]
+}

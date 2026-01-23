@@ -5,7 +5,7 @@ import os
 
 # =================設定檔名=================
 # 請修改成您電腦上實際的檔案路徑
-file_path = r"D:\spectrogram_pt_name\FS01_20230106_033000.pt"
+file_path = r"D:\spectrogram_6s_pt_name\FS01_20230107_201500_5.pt"
 # ==========================================
 
 if not os.path.exists(file_path):

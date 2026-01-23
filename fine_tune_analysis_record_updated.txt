@@ -1,0 +1,105 @@
+SSAST Fine-Tune 參數傳遞與資料讀取分析記錄
+============================================
+
+日期: 2026年1月12日
+
+1. run_tune.sh 參數傳遞
+----------------------
+python /work/t113618009/ssast_hub/ssast-main/src/run.py \
+  --data_train "$TRAIN_JSON" \    # 訓练集 JSON 路径
+  --data_val "$VAL_JSON" \        # 验证集 JSON 路径
+  --data_eval "$TEST_JSON" \      # 测试集 JSON 路径
+  --data_dir "$DATA_ROOT" \       # .pt 档案所在目录
+  --data_val_dir "$DATA_VAL_ROOT" # 验证集 .pt 档案目录
+  --label-csv "$LABEL_CSV" \
+  --dataset precomputed \
+  --dataset_mean -7.4482 \
+  --dataset_std 2.4689 \
+  --target_length 1024 \
+  --num_mel_bins 128 \
+  --fshape 16 \
+  --tshape 16 \
+  --fstride 16 \
+  --tstride 16 \
+  --n_class 12 \
+  --pretrained_mdl_path "/work/t113618009/ssast_hub/exp/pretrain_test/models/audio_model.134.pth" \
+  --model_size base \
+  --task ft_cls \
+  --mask_patch 0 \  # fine-tune 时不需要 mask
+  --cluster_factor 3 \
+  --n-epochs 5 \   # 先测试曲线
+  --batch-size 12 \
+  --lr 0.00001 \   # fine-tune 时使用更小的学习率
+  --exp-dir "/work/t113618009/ssast_hub/exp/finetune"
+
+2. run.py 參數解析
+------------------
+parser.add_argument("--data_train", type=str, default=None, help="training data json")
+parser.add_argument("--data_val", type=str, default=None, help="validation data json")
+parser.add_argument("--data_eval", type=str, default=None, help="evaluation data json")
+parser.add_argument("--data_dir", type=str, default=None, help="directory for precomputed .pt files")
+parser.add_argument("--data_val_dir", type=str, default=None, help="directory for validation .pt files")
+
+3. dataloader_pt_reader.py .pt 檔案讀取機制
+------------------------------------------
+class PrecomputedDataset(Dataset):
+- 從 --data_dir 獲取 .pt 檔案目錄
+- 從 JSON 的 wav 欄位提取檔名
+- 組合路徑: os.path.join(self.data_dir, f"{filename_no_ext}.pt")
+- 驗證 .pt 檔案是否存在，建立有效索引列表
+- __getitem__ 時載入 .pt 檔案，獲取 fbank 特徵和標籤
+
+4. HPC 環境路徑配置
+------------------
+- 訓練集目錄: /work/t113618009/spectrogram_pt_name/
+- 驗證集目錄: /work/t113618009/val_spectrogram_pt_name/
+- 訓練集 JSON: /work/t113618009/ssast_hub/finetune_stratified_final/train.json
+- 驗證集 JSON: /work/t113618009/ssast_hub/finetune_stratified_final/val.json
+- 測試集 JSON: /work/t113618009/ssast_hub/finetune_stratified_final/test.json
+
+5. data_eval 參數使用位置
+------------------------
+在 run.py 末尾：
+if args.data_eval is not None and 'pretrain' not in args.task:
+    # 創建測試集 DataLoader
+    eval_loader = torch.utils.data.DataLoader(
+        dataloader.AudioDataset(
+            args.data_eval,           # <- 這裡使用了 --data_eval 參數
+            label_csv=args.label_csv,
+            audio_conf=val_audio_conf
+        ),
+        batch_size=args.batch_size*2,
+        shuffle=False,
+        num_workers=args.num_workers,
+        pin_memory=True
+    )
+    stats, _ = validate(audio_model, eval_loader, args, 'eval_set')
+
+6. dataloader_pt_reader.py 獨立性
+-------------------------------
+- dataloader_pt_reader.py 不依賴其他 dataloader 程式
+- 完全獨立實現，僅繼承自 PyTorch 的 Dataset 類別
+- 自包含所有功能：JSON 解析、.pt 檔案讀取、Mixup 處理等
+
+7. 整體流程
+----------
+1. run_tune.sh → run.py (argparse)
+2. run.py → PrecomputedDataset (audio_conf 包含 data_dir)
+3. PrecomputedDataset 讀取 JSON，獲取 wav 路徑和標籤
+4. 從 JSON 路徑提取檔名，結合 data_dir 構建實際 .pt 路徑
+5. 檢查 .pt 檔案是否存在，建立有效索引列表
+6. __getitem__ 時載入 .pt 檔案，獲取 fbank 特徵和標籤
+7. 返回 (fbank, label_indices) 供模型訓練使用
+
+8. 最新修復記錄 (2026/1/21)
+---------------------------
+問題：在評估階段，即使使用 --dataset precomputed 參數，程式仍使用 dataloader.AudioDataset
+      導致 .pt 檔案被當作音訊檔案處理，產生 "no handler for file extension `pt'" 錯誤
+
+解決方案：修改 run.py 第331行附近的 eval_loader 創建部分
+    - 添加條件判斷：if args.dataset == 'precomputed'
+    - 如果是 precomputed 模式，使用 PrecomputedDataset
+    - 否則使用原來的 dataloader.AudioDataset
+    - 確保所有階段（訓練、驗證、評估）都使用正確的資料集類別
+
+結果：程式現在可以正確處理 .pt 檔案，訓練和評估階段都正常運行

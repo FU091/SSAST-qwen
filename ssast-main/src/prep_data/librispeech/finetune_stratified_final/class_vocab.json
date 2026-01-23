@@ -1,0 +1,30 @@
+{
+ "all_classes": [
+  "Aircraft",
+  "Bird",
+  "Cicada",
+  "Frog",
+  "Insect",
+  "Mammal",
+  "Owl",
+  "Rain",
+  "Silence",
+  "Speech",
+  "Stream",
+  "Wind"
+ ],
+ "present_classes": [
+  "Aircraft",
+  "Bird",
+  "Cicada",
+  "Frog",
+  "Insect",
+  "Mammal",
+  "Owl",
+  "Rain",
+  "Silence",
+  "Speech",
+  "Stream",
+  "Wind"
+ ]
+}

@@ -1,0 +1,43 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"singularity"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "singularity"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+/usr/local/lib/python3.8/site-packages/torch/utils/data/dataloader.py:478: UserWarning: This DataLoader will create 16 worker processes in total. Our suggested max number of worker in current system is 4, which is smaller than what this DataLoader is going to create. Please be aware that excessive worker creation might get DataLoader running slow or even freeze, lower the worker number to avoid potential slowness/freeze if necessary.
+  warnings.warn(_create_warning_msg(
+[Info] Running in Docker environment
+I am process 768074, running on gn1204.twcc.ai: starting (Wed Jan 21 18:20:47 2026)
+[Debug] Configuration Loaded - data_train: /work/t113618009/ssast_hub/finetune_stratified_final/train.json
+Using precomputed dataset (reading .pt files)...
+Found label CSV at: /work/t113618009/ssast_hub/class_labels_indices.csv
+Loaded Label Map: 12 classes with 12 mappings.
+Found JSON at: /work/t113618009/ssast_hub/finetune_stratified_final/train.json
+Found 1599 samples in JSON: /work/t113618009/ssast_hub/finetune_stratified_final/train.json
+Final valid samples: 1599 (Missing: 0)
+Found label CSV at: /work/t113618009/ssast_hub/class_labels_indices.csv
+Loaded Label Map: 12 classes with 12 mappings.
+Found JSON at: /work/t113618009/ssast_hub/finetune_stratified_final/val.json
+Found 200 samples in JSON: /work/t113618009/ssast_hub/finetune_stratified_final/val.json
+Final valid samples: 200 (Missing: 0)
+Now train with precomputed with 1599 samples, evaluate with 200 samples
+Using timm version: 0.4.5, bypassing version assertion for compatibility.
+Traceback (most recent call last):
+  File "/work/t113618009/ssast_hub/ssast-main/src/models/ast_models.py", line 164, in __init__
+    p_input_fdim, p_input_tdim = sd['module.p_input_fdim'].item(), sd['module.p_input_tdim'].item()
+KeyError: 'module.p_input_fdim'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work/t113618009/ssast_hub/ssast-main/src/run.py", line 289, in <module>
+    audio_model = ASTModel(label_dim=args.n_class, fshape=args.fshape, tshape=args.tshape, fstride=args.fstride, tstride=args.tstride, input_fdim=args.num_mel_bins, input_tdim=args.target_length, model_size=args.model_size, pretrain_stage=False, load_pretrained_mdl_path=args.pretrained_mdl_path)
+  File "/work/t113618009/ssast_hub/ssast-main/src/models/ast_models.py", line 166, in __init__
+    raise  ValueError('The model loaded is not from a torch.nn.Dataparallel object. Wrap it with torch.nn.Dataparallel and try again.')
+ValueError: The model loaded is not from a torch.nn.Dataparallel object. Wrap it with torch.nn.Dataparallel and try again.

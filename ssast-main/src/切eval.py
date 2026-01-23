@@ -4,8 +4,8 @@ import random
 
 def split_dataset():
     # --- 1. 設定參數 ---
-    source_dir = r"D:\spectrogram_pt_name"           # 原始資料夾 (訓練集)
-    target_dir = r"D:\val_spectrogram_pt_name"      # 新資料夾 (驗證集)
+    source_dir = r"D:\spectrogram_6s_pt_name"           # 原始資料夾 (訓練集)
+    target_dir = r"D:\val_spectrogram_6s_pt_name"      # 新資料夾 (驗證集)
     config_filename = "dataset_config.pt"
     val_ratio = 0.10                # 10% 驗證集
 

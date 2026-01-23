@@ -17,24 +17,72 @@ from torch.utils.data import Dataset
 import random
 
 def make_index_dict(label_csv):
+    import codecs
     index_lookup = {}
-    with open(label_csv, 'r') as f:
-        csv_reader = csv.DictReader(f)
-        line_count = 0
-        for row in csv_reader:
-            index_lookup[row['mid']] = row['index']
-            line_count += 1
-    return index_lookup
+    # 嘗試多種編碼格式
+    encodings = ['utf-8', 'big5', 'gbk', 'latin-1']
+    for encoding in encodings:
+        try:
+            with open(label_csv, 'r', encoding=encoding) as f:
+                csv_reader = csv.DictReader(f)
+                line_count = 0
+                for row in csv_reader:
+                    index_lookup[row['mid']] = row['index']
+                    line_count += 1
+            print(f"Successfully loaded {label_csv} with {encoding} encoding")
+            return index_lookup
+        except UnicodeDecodeError:
+            continue
+        except Exception as e:
+            print(f"Error reading {label_csv} with {encoding} encoding: {e}")
+            continue
+    # 如果所有編碼都失敗，嘗試使用 errors='ignore' 或 'replace'
+    try:
+        with open(label_csv, 'r', encoding='utf-8', errors='replace') as f:
+            csv_reader = csv.DictReader(f)
+            line_count = 0
+            for row in csv_reader:
+                index_lookup[row['mid']] = row['index']
+                line_count += 1
+        print(f"Loaded {label_csv} with utf-8 encoding using error handling")
+        return index_lookup
+    except Exception as e:
+        print(f"All encoding attempts failed for {label_csv}: {e}")
+        raise
 
 def make_name_dict(label_csv):
+    import codecs
     name_lookup = {}
-    with open(label_csv, 'r') as f:
-        csv_reader = csv.DictReader(f)
-        line_count = 0
-        for row in csv_reader:
-            name_lookup[row['index']] = row['display_name']
-            line_count += 1
-    return name_lookup
+    # 嘗試多種編碼格式
+    encodings = ['utf-8', 'big5', 'gbk', 'latin-1']
+    for encoding in encodings:
+        try:
+            with open(label_csv, 'r', encoding=encoding) as f:
+                csv_reader = csv.DictReader(f)
+                line_count = 0
+                for row in csv_reader:
+                    name_lookup[row['index']] = row['display_name']
+                    line_count += 1
+            print(f"Successfully loaded {label_csv} with {encoding} encoding")
+            return name_lookup
+        except UnicodeDecodeError:
+            continue
+        except Exception as e:
+            print(f"Error reading {label_csv} with {encoding} encoding: {e}")
+            continue
+    # 如果所有編碼都失敗，嘗試使用 errors='ignore' 或 'replace'
+    try:
+        with open(label_csv, 'r', encoding='utf-8', errors='replace') as f:
+            csv_reader = csv.DictReader(f)
+            line_count = 0
+            for row in csv_reader:
+                name_lookup[row['index']] = row['display_name']
+                line_count += 1
+        print(f"Loaded {label_csv} with utf-8 encoding using error handling")
+        return name_lookup
+    except Exception as e:
+        print(f"All encoding attempts failed for {label_csv}: {e}")
+        raise
 
 def lookup_list(index_list, label_csv):
     label_list = []
@@ -72,6 +120,8 @@ class AudioDataset(Dataset):
         self.mixup = self.audio_conf.get('mixup')
         print('now using mix-up with rate {:f}'.format(self.mixup))
         self.dataset = self.audio_conf.get('dataset')
+        if self.dataset is None:
+            self.dataset = 'default'
         print('now process ' + self.dataset)
         # dataset spectrogram mean and std, used to normalize the input
         self.norm_mean = self.audio_conf.get('mean')

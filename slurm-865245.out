@@ -1,0 +1,62 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"singularity"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "singularity"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+[Info] Running in Docker environment
+I am process 3624277, running on gn1226.twcc.ai: starting (Wed Jan 21 21:58:41 2026)
+[Debug] Configuration Loaded - data_train: /work/t113618009/ssast_hub/finetune_stratified_final/train.json
+Using precomputed dataset (reading .pt files)...
+Found label CSV at: /work/t113618009/ssast_hub/class_labels_indices.csv
+Loaded Label Map: 12 classes with 12 mappings.
+Found JSON at: /work/t113618009/ssast_hub/finetune_stratified_final/train.json
+Found 1599 samples in JSON: /work/t113618009/ssast_hub/finetune_stratified_final/train.json
+Final valid samples: 1599 (Missing: 0)
+Found label CSV at: /work/t113618009/ssast_hub/class_labels_indices.csv
+Loaded Label Map: 12 classes with 12 mappings.
+Found JSON at: /work/t113618009/ssast_hub/finetune_stratified_final/val.json
+Found 200 samples in JSON: /work/t113618009/ssast_hub/finetune_stratified_final/val.json
+Final valid samples: 200 (Missing: 0)
+Now train with precomputed with 1599 samples, evaluate with 200 samples
+Using timm version: 0.4.5, bypassing version assertion for compatibility.
+now load a SSL pretrained models from /work/t113618009/ssast_hub/ssast-main/pretrained_model/SSAST-Base-Patch-400.pth
+Using timm version: 0.4.5, bypassing version assertion for compatibility.
+pretraining patch split stride: frequency=16, time=16
+pretraining patch shape: frequency=16, time=16
+pretraining patch array dimension: frequency=8, time=64
+pretraining number of patches=512
+fine-tuning patch split stride: frequncey=10, time=10
+fine-tuning number of patches=1212
+Now starting fine-tuning for 40 epochs
+running on cuda
+Total parameter number is : 87.736 million
+Total trainable parameter number is : 87.736 million
+The mlp header uses 10 x larger lr
+Total mlp parameter number is : 0.011 million
+Total base parameter number is : 87.725 million
+now training with precomputed, main metrics: mAP, loss function: BCEWithLogitsLoss(), learning rate scheduler: <torch.optim.lr_scheduler.MultiStepLR object at 0x15515b98e3a0>
+The learning rate scheduler starts at 10 epoch with decay rate of 0.500 every 5 epoches
+current #steps=0, #epochs=1
+start training...
+---------------
+2026-01-21 21:58:55.407086
+current #epochs=1, #steps=0
+/usr/local/lib/python3.8/site-packages/torch/nn/functional.py:3609: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/work/t113618009/ssast_hub/ssast-main/src/run.py", line 305, in <module>
+    train(audio_model, train_loader, val_loader, args)
+  File "/work/t113618009/ssast_hub/ssast-main/src/traintest.py", line 149, in train
+    loss.backward()
+  File "/usr/local/lib/python3.8/site-packages/torch/_tensor.py", line 255, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph, inputs=inputs)
+  File "/usr/local/lib/python3.8/site-packages/torch/autograd/__init__.py", line 147, in backward
+    Variable._execution_engine.run_backward(
+RuntimeError: CUDA out of memory. Tried to allocate 810.00 MiB (GPU 0; 31.74 GiB total capacity; 29.46 GiB already allocated; 131.38 MiB free; 30.28 GiB reserved in total by PyTorch)

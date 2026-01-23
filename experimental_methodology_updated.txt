@@ -1,0 +1,92 @@
+Experimental Methodology: Fine-tuning Self-Supervised Audio Spectrogram Transformer (SSAST) for Audio Classification
+
+1. Introduction and Background
+
+This study presents a comprehensive experimental methodology for fine-tuning the Self-Supervised Audio Spectrogram Transformer (SSAST) model for audio classification tasks. The approach leverages self-supervised learning (SSL) techniques to pre-train audio representations, followed by supervised fine-tuning for specific classification objectives. Our methodology addresses challenges in audio processing by utilizing transformer architectures adapted for spectrogram analysis.
+
+2. Pre-trained Model Foundation
+
+The experimental framework begins with a pre-trained SSAST model, which employs self-supervised learning to learn meaningful audio representations without requiring labeled data during the pre-training phase. The model utilizes masked patch prediction strategies to learn robust audio representations from raw spectrograms. The pre-trained model (audio_model.134.pth) serves as the foundation for transfer learning, containing learned features that capture essential acoustic patterns.
+
+3. Dataset Preparation and Stratification
+
+Audio data was converted to spectrograms using mel-scaled filter banks with 128 mel bins, resulting in time-frequency representations suitable for transformer processing. The dataset was stratified to ensure balanced class distribution across training, validation, and test sets. Specifically, the dataset was divided into 1,599 training samples, 200 validation samples, and an appropriate test set size, maintaining proportional representation of each of the 12 audio classes.
+
+The spectrograms were standardized using dataset-specific mean (-7.4482) and standard deviation (2.4689) values to normalize input distributions. The target length was set to 1024 to ensure consistent input dimensions across samples.
+
+4. Model Architecture and Configuration
+
+The SSAST model employs a transformer architecture specifically designed for audio spectrogram processing. Key architectural parameters include:
+- Patch split stride: frequency=16, time=16
+- Patch shape: frequency=16, time=16
+- Number of patches: 512
+- Model size: Base configuration
+- Total parameters: 87.198 million (with 87.198 million trainable parameters)
+
+The model incorporates a multi-layer perceptron (MLP) classification head for the final prediction layer, which uses 1× larger learning rates compared to the base model parameters to facilitate faster adaptation during fine-tuning.
+
+5. Fine-tuning Strategy
+
+The fine-tuning process adapts the pre-trained SSL model to the supervised classification task using the following hyperparameters:
+- Learning rate: 1×10⁻⁵ with 1× head learning rate multiplier
+- Batch size: 2
+- Number of epochs: 1 (for initial validation, extendable for full training)
+- Optimizer: Adam optimizer
+- Loss function: Binary Cross-Entropy (BCE) with logits
+- Evaluation metric: Mean Average Precision (mAP)
+
+6. Data Augmentation and Regularization
+
+To improve model generalization and prevent overfitting, several data augmentation techniques were employed:
+- Frequency masking (freqm): 0 (disabled for this experiment)
+- Time masking (timem): 0 (disabled for this experiment)
+- MixUp augmentation: 0.0 (disabled to avoid label mixing complexities)
+
+The balancing strategy was set to 'none' to preserve the natural distribution of the stratified dataset.
+
+7. Technical Infrastructure and Environment
+
+The experiments were conducted using high-performance computing (HPC) infrastructure with the following specifications:
+- Computing environment: Slurm workload manager for job scheduling
+- Hardware: Single GPU (NVIDIA) allocation per job
+- Containerization: Singularity/Apptainer for reproducible environments
+- Resource allocation: 1 node, 1 task per node, 4 CPUs per task
+- Maximum runtime: 2 hours for initial testing (extendable)
+
+The containerized environment ensures reproducibility and eliminates dependency conflicts by packaging all required libraries and frameworks.
+
+8. Training and Validation Protocol
+
+Training was performed using the pre-computed dataset approach, where spectrogram tensors (.pt files) were loaded directly. The training process monitored multiple metrics including:
+- Training loss
+- Validation loss
+- Mean Average Precision (mAP)
+- Area Under Curve (AUC)
+- Average Precision and Recall
+
+The learning rate scheduler was configured to start at epoch 10 with decay rate of 0.5 every 5 epochs, though this may not be fully utilized in single-epoch experiments.
+
+9. Evaluation Metrics
+
+Model performance was evaluated using multiple metrics appropriate for multi-class audio classification:
+- Mean Average Precision (mAP): Primary evaluation metric
+- Area Under Curve (AUC): Secondary metric for discrimination quality
+- Average Precision and Recall: Additional performance indicators
+- d-prime: Sensitivity measure for detection tasks
+
+10. Technical Improvements and Innovations
+
+Our methodology incorporates several technical improvements:
+- Efficient binding of large spectrogram datasets to containerized environments
+- Proper handling of label mapping for 12-class classification
+- Correct normalization using pre-computed dataset statistics
+- Strategic disabling of certain augmentation techniques to maintain label integrity
+- Comprehensive error handling for file path resolution in distributed computing environments
+- Implementation of PrecomputedDataset to handle pre-computed .pt files correctly across all phases (training, validation, and evaluation)
+- Dynamic dataset selection based on --dataset parameter to ensure consistent data loading throughout the pipeline
+
+11. Reproducibility Measures
+
+To ensure reproducibility, all experimental parameters, hyperparameters, and environmental configurations were documented. The use of containerization ensures consistent execution environments across different computing platforms.
+
+This experimental methodology provides a robust framework for fine-tuning SSAST models for audio classification tasks, leveraging self-supervised pre-training and carefully designed fine-tuning procedures to achieve optimal performance on the target classification problem.

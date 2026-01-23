@@ -1,0 +1,142 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"singularity"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "singularity"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+[Info] Running in Docker environment
+I am process 937556, running on gn1204.twcc.ai: starting (Wed Jan 21 19:40:33 2026)
+[Debug] Configuration Loaded - data_train: /work/t113618009/ssast_hub/finetune_stratified_final/train.json
+Using precomputed dataset (reading .pt files)...
+Found label CSV at: /work/t113618009/ssast_hub/class_labels_indices.csv
+Loaded Label Map: 12 classes with 12 mappings.
+Found JSON at: /work/t113618009/ssast_hub/finetune_stratified_final/train.json
+Found 1599 samples in JSON: /work/t113618009/ssast_hub/finetune_stratified_final/train.json
+Final valid samples: 1599 (Missing: 0)
+Found label CSV at: /work/t113618009/ssast_hub/class_labels_indices.csv
+Loaded Label Map: 12 classes with 12 mappings.
+Found JSON at: /work/t113618009/ssast_hub/finetune_stratified_final/val.json
+Found 200 samples in JSON: /work/t113618009/ssast_hub/finetune_stratified_final/val.json
+Final valid samples: 200 (Missing: 0)
+Now train with precomputed with 1599 samples, evaluate with 200 samples
+Using timm version: 0.4.5, bypassing version assertion for compatibility.
+now load a SSL pretrained models from /work/t113618009/ssast_hub/ssast-main/pretrained_model/SSAST-Base-Patch-400.pth
+Using timm version: 0.4.5, bypassing version assertion for compatibility.
+pretraining patch split stride: frequency=16, time=16
+pretraining patch shape: frequency=16, time=16
+pretraining patch array dimension: frequency=8, time=64
+pretraining number of patches=512
+fine-tuning patch split stride: frequncey=16, time=16
+fine-tuning number of patches=512
+Now starting fine-tuning for 5 epochs
+running on cuda
+Total parameter number is : 87.198 million
+Total trainable parameter number is : 87.198 million
+The mlp header uses 1 x larger lr
+Total mlp parameter number is : 0.011 million
+Total base parameter number is : 87.188 million
+now training with precomputed, main metrics: mAP, loss function: BCEWithLogitsLoss(), learning rate scheduler: <torch.optim.lr_scheduler.MultiStepLR object at 0x14cbe490e3a0>
+The learning rate scheduler starts at 10 epoch with decay rate of 0.500 every 5 epoches
+current #steps=0, #epochs=1
+start training...
+---------------
+2026-01-21 19:40:50.180829
+current #epochs=1, #steps=0
+/usr/local/lib/python3.8/site-packages/torch/nn/functional.py:3609: UserWarning: Default upsampling behavior when mode=bilinear is changed to align_corners=False since 0.4.0. Please specify align_corners=True if the old behavior is desired. See the documentation of nn.Upsample for details.
+  warnings.warn(
+Epoch: [1][100/133]	Per Sample Total Time 0.03175	Per Sample Data Time 0.00087	Per Sample DNN Time 0.03088	Train Loss 0.3613	
+start validation
+mAP: 0.381193
+AUC: 0.713047
+Avg Precision: 0.183108
+Avg Recall: 1.000000
+d_prime: 0.795223
+train_loss: 0.346945
+valid_loss: 0.719642
+validation finished
+normal learning rate scheduler step
+Epoch-1 lr: 1e-05
+Epoch-1 lr: 1e-05
+epoch 1 training time: 55.635
+---------------
+2026-01-21 19:41:45.815937
+current #epochs=2, #steps=133
+Epoch: [2][67/133]	Per Sample Total Time 0.03180	Per Sample Data Time 0.00095	Per Sample DNN Time 0.03085	Train Loss 0.2796	
+start validation
+mAP: 0.533987
+AUC: 0.828476
+Avg Precision: 0.218246
+Avg Recall: 1.000000
+d_prime: 1.340902
+train_loss: 0.264644
+valid_loss: 0.700570
+validation finished
+normal learning rate scheduler step
+Epoch-2 lr: 1e-05
+Epoch-2 lr: 1e-05
+epoch 2 training time: 55.350
+---------------
+2026-01-21 19:42:41.165462
+current #epochs=3, #steps=266
+Epoch: [3][34/133]	Per Sample Total Time 0.03244	Per Sample Data Time 0.00152	Per Sample DNN Time 0.03092	Train Loss 0.2352	
+start validation
+mAP: 0.614330
+AUC: 0.866802
+Avg Precision: 0.242275
+Avg Recall: 1.000000
+d_prime: 1.571760
+train_loss: 0.220497
+valid_loss: 0.694371
+validation finished
+normal learning rate scheduler step
+Epoch-3 lr: 1e-05
+Epoch-3 lr: 1e-05
+epoch 3 training time: 55.475
+---------------
+2026-01-21 19:43:36.640329
+current #epochs=4, #steps=399
+Epoch: [4][1/133]	Per Sample Total Time 0.05313	Per Sample Data Time 0.02132	Per Sample DNN Time 0.03182	Train Loss 0.1572	
+Epoch: [4][101/133]	Per Sample Total Time 0.03166	Per Sample Data Time 0.00075	Per Sample DNN Time 0.03091	Train Loss 0.1898	
+start validation
+mAP: 0.668351
+AUC: 0.883916
+Avg Precision: 0.271996
+Avg Recall: 1.000000
+d_prime: 1.689690
+train_loss: 0.189694
+valid_loss: 0.688910
+validation finished
+normal learning rate scheduler step
+Epoch-4 lr: 1e-05
+Epoch-4 lr: 1e-05
+epoch 4 training time: 55.322
+---------------
+2026-01-21 19:44:31.962387
+current #epochs=5, #steps=532
+Epoch: [5][68/133]	Per Sample Total Time 0.03270	Per Sample Data Time 0.00178	Per Sample DNN Time 0.03092	Train Loss 0.1730	
+start validation
+mAP: 0.679512
+AUC: 0.899339
+Avg Precision: 0.277406
+Avg Recall: 1.000000
+d_prime: 1.807074
+train_loss: 0.168920
+valid_loss: 0.683403
+validation finished
+normal learning rate scheduler step
+Epoch-5 lr: 1e-05
+Epoch-5 lr: 1e-05
+epoch 5 training time: 56.302
+---------------evaluate on validation set---------------
+---------------evaluate on evaluation set---------------
+Found label CSV at: /work/t113618009/ssast_hub/class_labels_indices.csv
+Loaded Label Map: 12 classes with 12 mappings.
+Found JSON at: /work/t113618009/ssast_hub/finetune_stratified_final/test.json
+Found 200 samples in JSON: /work/t113618009/ssast_hub/finetune_stratified_final/test.json
+Final valid samples: 200 (Missing: 0)

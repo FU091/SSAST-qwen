@@ -1,0 +1,125 @@
+# SSAST 微調路徑傳遞審核清單
+
+## 1. 主要腳本入口點
+- [ ] **run_tune_soft_labels.sh** - 主要執行腳本
+  - 檢查參數傳遞：
+    - [ ] --data_train: /work/t113618009/ssast_hub/finetune_stratified_final/train.json
+    - [ ] --data_val: /work/t113618009/ssast_hub/finetune_stratified_final/val.json  
+    - [ ] --data_eval: /work/t113618009/ssast_hub/finetune_stratified_final/test.json
+    - [ ] --label-csv: /work/t113618009/ssast_hub/class_labels_indices.csv
+    - [ ] --dataset_root: /work/t113618009/spectrogram_pt_name
+    - [ ] --dataset: precomputed
+    - [ ] --task: ft_cls
+
+## 2. 容器綁定路徑檢查
+- [ ] **Singularity 綁定路徑**：
+  - [ ] --bind /work/t113618009:/work/t113618009
+  - [ ] --bind /work/t113618009/spectrogram_pt_name:/work/t113618009/spectrogram_pt_name
+  - [ ] --bind /work/t113618009/ssast_hub/finetune_stratified_final:/work/t113618009/ssast_hub/finetune_stratified_final
+  - [ ] --bind /work/t113618009/ssast_hub/class_labels_indices.csv:/work/t113618009/ssast_hub/class_labels_indices.csv
+
+## 3. run.py 參數接收與處理
+- [ ] **參數解析檢查**：
+  - [ ] args.data_train: 接收 train.json 路徑
+  - [ ] args.data_val: 接收 val.json 路徑
+  - [ ] args.data_eval: 接收 test.json 路徑
+  - [ ] args.label_csv: 接收 CSV 標籤路徑
+  - [ ] args.dataset_root: 接收 .pt 檔案根目錄
+  - [ ] args.dataset: 接收 'precomputed' 模式
+  - [ ] args.task: 接收 'ft_cls' 任務
+
+- [ ] **音訊配置構建**：
+  - [ ] audio_conf['data_dir']: 應設為 args.dataset_root
+  - [ ] val_audio_conf['data_dir']: 應設為 args.dataset_root
+  - [ ] audio_conf['mode']: 設為 'train'
+  - [ ] val_audio_conf['mode']: 設為 'evaluation'
+
+## 4. 資料集初始化路徑傳遞
+- [ ] **PrecomputedDataset 初始化**：
+  - [ ] dataset_json_file: 傳入 args.data_train
+  - [ ] data_dir: 傳入 audio_conf['data_dir'] (即 args.dataset_root)
+  - [ ] label_csv: 傳入 args.label_csv
+  - [ ] mixup: 傳入 args.mixup
+
+- [ ] **驗證集初始化**：
+  - [ ] dataset_json_file: 傳入 args.data_val
+  - [ ] data_dir: 傳入 val_audio_conf['data_dir']
+  - [ ] label_csv: 傳入 args.label_csv
+  - [ ] mixup: 設為 0.0
+
+- [ ] **評估集初始化**：
+  - [ ] dataset_json_file: 傳入 args.data_eval
+  - [ ] data_dir: 傳入 val_audio_conf['data_dir']
+  - [ ] label_csv: 傳入 args.label_csv
+  - [ ] mixup: 設為 0.0
+
+## 5. JSON 檔案結構檢查
+- [ ] **JSON 檔案內容格式**：
+  - [ ] 檢查 train.json 是否包含 'data' 陣列
+  - [ ] 檢查 val.json 是否包含 'data' 陣列
+  - [ ] 檢查 test.json 是否包含 'data' 陣列
+  - [ ] 檢查每個 data 項目是否包含 'wav' 欄位
+  - [ ] 檢查 'wav' 欄位是否指向正確的 .pt 檔案名稱
+
+- [ ] **JSON 檔案路徑一致性**：
+  - [ ] JSON 中的 'wav' 路徑是否與 .pt 檔案名稱匹配
+  - [ ] JSON 中的 'labels' 欄位格式是否正確
+  - [ ] JSON 中的 'labels' 是否與 CSV 中的標籤匹配
+
+## 6. CSV 標籤檔案檢查
+- [ ] **class_labels_indices.csv 結構**：
+  - [ ] 是否包含 'index' 欄位
+  - [ ] 是否包含 'mid' 或 'display_name' 欄位
+  - [ ] 檢查是否有 12 個類別標籤
+  - [ ] 檢查標籤索引是否連續 (0-11)
+
+## 7. .pt 檔案路徑解析檢查
+- [ ] **dataloader_pt_reader.py 中的路徑構建**：
+  - [ ] 是否正確組合 data_dir + 檔名
+  - [ ] 是否正確檢查 .pt 檔案存在性
+  - [ ] 是否正確載入 torch.load(.pt檔案)
+  - [ ] .pt 檔案是否包含 'x' 鍵 (頻譜圖數據)
+
+## 8. 訓練流程路徑檢查
+- [ ] **訓練階段**：
+  - [ ] 資料載入器是否正確讀取 .pt 檔案
+  - [ ] 標籤映射是否正確
+  - [ ] 資料增強是否正確應用
+
+- [ ] **驗證階段**：
+  - [ ] 驗證資料載入器是否正確讀取 .pt 檔案
+  - [ ] 驗證標籤映射是否正確
+
+- [ ] **評估階段**：
+  - [ ] 評估資料載入器是否正確讀取 .pt 檔案
+  - [ ] 評估標籤映射是否正確
+
+## 9. 潛在問題點檢查
+- [ ] **路徑拼接問題**：
+  - [ ] 檢查是否存在重複路徑拼接
+  - [ ] 檢查相對路徑與絕對路徑一致性
+
+- [ ] **檔案權限問題**：
+  - [ ] 檢查 .pt 檔案是否可讀
+  - [ ] 檢查 JSON 檔案是否可讀
+  - [ ] 檢查 CSV 檔案是否可讀
+
+- [ ] **容器內外路徑映射**：
+  - [ ] 檢查容器內路徑與主機路徑一致性
+  - [ ] 檢查綁定路徑是否正確映射
+
+## 10. 錯誤處理檢查
+- [ ] **檔案不存在處理**：
+  - [ ] 是否有適當的錯誤提示
+  - [ ] 是否有替代路徑嘗試機制
+
+- [ ] **資料載入錯誤處理**：
+  - [ ] .pt 檔案損壞時的處理
+  - [ ] 標籤不匹配時的處理
+
+## 自查步驟：
+1. 驗證所有路徑在 HPC 系統上確實存在
+2. 檢查 .pt 檔案數量是否與 JSON 中記錄數量一致
+3. 確認 JSON 中的檔名與實際 .pt 檔案名稱完全匹配
+4. 測試單個 .pt 檔案是否可以正確載入
+5. 驗證標籤映射是否正確無誤
