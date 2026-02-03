@@ -1,0 +1,1604 @@
+{
+ "data": [
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230412_092400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231024_210000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230605_094800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230203_235700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230530_211800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230804_192700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231005_005100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230517_204200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231210_230600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230823_230000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240731_051500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230921_003900.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230409_120300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230329_102700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230324_080600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230816_130000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230822_133300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230707_124800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230512_233300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240824_044200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230503_043300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230919_000000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231227_004500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230718_170000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230620_130000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230401_225700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230307_210000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230814_160300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231024_130000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231230_070000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230115_060000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230707_181200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230829_115700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230322_100000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231230_100000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230517_210000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230403_224200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230704_182100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230913_052100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230827_082400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230330_224500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231024_093900.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230823_040000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230322_020000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231230_090000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230307_040000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240810_192400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230416_041800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240808_110600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230718_080000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230404_224800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230805_112700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230811_072700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230517_190000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230409_020000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230307_020000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230219_220000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230531_072700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240420_013600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230603_052100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230301_173000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231024_140000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231108_201500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230322_090000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240629_170900.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230707_135400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230323_114200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231024_070000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230817_204500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231207_190300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230620_220000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230115_050000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230219_140000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230815_230000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230808_193300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240529_222700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230620_200000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231118_135400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230403_205100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230609_132400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240329_184200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230601_045400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230411_012400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240218_054800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230218_052400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240806_165700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230714_032400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230823_010000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230115_040000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230506_002700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230307_000000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240408_052700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230219_060000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231230_040000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230803_172400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240228_235100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230806_000900.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230912_021200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240518_225400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230322_020000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230823_020000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240825_190900.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230622_145400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230307_130000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231121_210000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240503_083300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230718_130000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240512_005400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230322_060000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231101_014500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230520_100000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230503_200900.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231024_120000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230118_090000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231121_060000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230409_210000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230409_090000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230614_023600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231216_131800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230628_234500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230823_220000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230425_145100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240326_065400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231106_093300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230219_040000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230520_230900.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230724_173300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231214_090600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231218_222700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240808_082400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230428_172100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230415_213000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230307_020000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230323_042700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230804_041200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230922_171500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240228_231500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231121_200000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230615_055400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240518_162400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230306_185100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230607_112100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230307_060000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230612_113300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230120_190000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230318_073900.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230307_120000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231214_193300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240615_120300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231024_120000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230924_080300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230823_170000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230303_140000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231023_091500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230620_160000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231007_120000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230307_070000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230219_210000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20250114_062700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230409_140000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231019_061800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230518_150600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230923_201200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230318_035400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231230_120000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230919_231500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230516_090000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230525_044800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230823_150000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230126_075400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230823_120000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230219_050000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230302_203600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230115_120000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230528_012100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230115_160000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240831_165400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230919_130000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230322_000000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230317_020300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230301_123900.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230130_042400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230829_050300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230115_010000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230409_030000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230715_072400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230219_130000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230809_204500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230725_122700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231024_170000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230710_083000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231225_200600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230714_031800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230928_165100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230801_125100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231102_221500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230919_200000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230724_115100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230411_061500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240831_120000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231218_234800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230919_220000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230718_030000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230409_190000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231107_061500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230806_212700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240409_012100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230823_090000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230307_150000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230707_031200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230823_160000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230919_090000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230617_232400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230319_224800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230718_233000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230919_180000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231115_144500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230419_145400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231109_103600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230322_220000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230126_113000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230517_230000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230409_183900.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230322_070000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230718_160000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230625_152700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230315_184200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230614_104500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231024_090000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230801_074200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231121_020000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230517_120000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231024_080000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230509_143300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230517_060000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230124_102400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230810_135400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230322_110000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230704_184800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230213_200600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230728_103000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230803_075700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230911_050300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230908_200000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230718_030000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230620_030000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230115_000000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230703_095400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231226_162700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230818_055700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230221_082100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231024_000000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231024_040000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230213_061800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240409_013600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230517_080000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230228_094200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230620_200000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230409_150000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230322_210600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230316_171800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230115_180000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230115_090000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230217_132100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230919_210000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230806_182700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240528_220900.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230329_125400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230718_180000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230918_122100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230424_065400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231210_095400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230307_100000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230517_160000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230218_133900.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230620_130000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230701_085100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240425_043000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231209_071800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230904_083900.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230919_183300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230221_082400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230517_090000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230215_090900.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230919_140000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240726_224800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230909_180600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231116_063000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230705_192100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231102_203300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230620_180000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230707_174500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230919_040000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230219_144800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230118_110600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230730_162100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231214_091800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230617_190300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230302_040600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230919_000000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230409_060000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231024_200000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230822_045400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230718_000000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240604_021500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230619_145400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230526_103000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240209_025400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231205_003000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230605_171500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231026_204800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230628_221200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230402_073600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231015_092400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240528_221500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230515_072400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230115_210000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230214_055400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230825_093300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230827_043300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230517_030000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240502_201200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240801_154200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230109_145100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231102_070000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230517_130000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230618_223300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231121_220000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230219_030000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230921_125100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231216_002400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230728_090300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230302_090300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230322_080000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230702_105400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240117_174500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231221_171500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230510_215700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230801_061200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230806_210900.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231006_175700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230910_083300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230130_113600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230219_100000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230409_080000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230531_184200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230517_220000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230424_015400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230620_180000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230718_060000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230620_070000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231230_060000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230529_230000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230317_004500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230718_000000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230115_230000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230608_141200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230823_030000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240824_163300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230517_200000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230322_030000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230406_170300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231024_060000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230807_000900.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230115_110000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230802_191200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230512_174200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230307_080000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230615_013600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230726_021200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230604_032400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230219_120000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231201_225100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230501_174800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230707_085100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230226_000600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20231230_120000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230711_160900.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230517_000000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230823_130000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240206_022400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230622_142700.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230724_181200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230919_030000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231123_055400.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230825_061200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230217_054500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230614_170600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230722_211500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240220_063000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230409_010000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230826_040300.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230128_204500.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230809_210600.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230731_061800.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20230526_021200.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS01_20231116_195100.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230219_090000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/TML01_20240601_053000.pt",
+   "labels": "/m/09x0r"
+  },
+  {
+   "wav": "/work/t113618009/spectrogram_pt_name/FS02_20230704_145100.pt",
+   "labels": "/m/09x0r"
+  }
+ ]
+}

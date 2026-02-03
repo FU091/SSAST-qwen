@@ -56,7 +56,7 @@ def parse_slurm_log(log_path):
 # ==========================================
 # 使用設定：請把您的單一檔名填在這裡
 # ==========================================
-target_log_file = r"C:\Users\Lin\Desktop\2_code\ssast_hub\soft_labels_865573.out"
+target_log_file = r"C:\Users\Lin\Desktop\2_code\ssast_hub\soft_labels_867023.out"
 
 # 檢查檔案是否存在
 if not os.path.exists(target_log_file):
@@ -81,7 +81,7 @@ plt.figure(figsize=(14, 6))
 # --- 左圖: mAP ---
 plt.subplot(1, 2, 1)
 plt.plot(epochs, maps, marker='o', color='b', label='mAP')
-plt.title(f"mAP Curve ({base_name})")
+plt.title(f"mAP Curve ({base_name})fs tml")
 plt.xlabel("Epochs")
 plt.ylabel("mAP")
 plt.grid(True)
@@ -91,7 +91,7 @@ plt.legend()
 plt.subplot(1, 2, 2)
 plt.plot(epochs, t_losses, label='Train Loss', linestyle='--', color='orange')
 plt.plot(epochs, v_losses, label='Valid Loss', color='red')
-plt.title(f"Loss Curve ({base_name})")
+plt.title(f"Loss Curve ({base_name})fs tml")
 plt.xlabel("Epochs")
 plt.ylabel("Loss")
 plt.grid(True)
@@ -102,7 +102,7 @@ plt.tight_layout()
 # 儲存圖片 (自動使用 .out 的檔名，改為 .png)
 output_filename = f"{base_name}.png"
 plt.savefig(output_filename)
-print(f"圖表已儲存為: {output_filename}")
+print(f"圖表已儲存為: {output_filename}fs tml")
 
 # 顯示圖片
 plt.show()

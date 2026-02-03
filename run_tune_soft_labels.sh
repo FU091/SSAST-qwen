@@ -51,14 +51,14 @@ python /work/t113618009/ssast_hub/ssast-main/src/run.py \
   --dataset_std 2.4689 \
   --target_length 1024 \
   --num_mel_bins 128 \
-  --exp-dir "/work/t113618009/ssast_hub/exp/finetune/epoch30/ssl" \
+  --exp-dir "/work/t113618009/ssast_hub/exp/finetune/fs_tml_onely_finetune/ssl" \
   --lr 0.00005 \
   --n-epochs 40 \
   --batch-size 12 \
   --save_model True \
   --freqm 24 \
   --timem 24 \
-  --mixup 0.0 \
+  --mixup 0.5 \
   --bal none \
   --fstride 10 \
   --tstride 10 \
@@ -68,7 +68,7 @@ python /work/t113618009/ssast_hub/ssast-main/src/run.py \
   --task ft_cls \
   --model_size base \
   --adaptschedule False \
-  --pretrained_mdl_path "/work/t113618009/ssast_hub/exp/pretrain_test/models/audio_model.134.pth" \
+  --pretrained_mdl_path "/work/t113618009/ssast_hub/exp/pretrain_fs_tml/models/best_audio_model.pth" \
   --dataset_root "$DATA_ROOT" \
   --head_lr 10 \
   --noise False \

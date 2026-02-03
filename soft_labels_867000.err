@@ -1,0 +1,25 @@
+Lmod has detected the following error: The following module(s) are unknown:
+"singularity"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "singularity"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+Traceback (most recent call last):
+  File "/work/t113618009/ssast_hub/ssast-main/src/models/ast_models.py", line 164, in __init__
+    p_input_fdim, p_input_tdim = sd['module.p_input_fdim'].item(), sd['module.p_input_tdim'].item()
+KeyError: 'module.p_input_fdim'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/work/t113618009/ssast_hub/ssast-main/src/run.py", line 289, in <module>
+    audio_model = ASTModel(label_dim=args.n_class, fshape=args.fshape, tshape=args.tshape, fstride=args.fstride, tstride=args.tstride, input_fdim=args.num_mel_bins, input_tdim=args.target_length, model_size=args.model_size, pretrain_stage=False, load_pretrained_mdl_path=args.pretrained_mdl_path)
+  File "/work/t113618009/ssast_hub/ssast-main/src/models/ast_models.py", line 166, in __init__
+    raise  ValueError('The model loaded is not from a torch.nn.Dataparallel object. Wrap it with torch.nn.Dataparallel and try again.')
+ValueError: The model loaded is not from a torch.nn.Dataparallel object. Wrap it with torch.nn.Dataparallel and try again.

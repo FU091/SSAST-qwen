@@ -1,0 +1,56 @@
+
+以下為統整推論時必須嚴格遵守的細節規格：
+
+---
+
+## SSAST 推論規格統整報告
+
+### 1. 物理規格與 Patch 設定 (Architecture)
+
+推論模型必須與訓練時的編碼器結構完全匹配，否則權重載入會發生維度錯誤。
+
+* **模型尺寸 (Model Size)**：確認是 `tiny`, `small`, 還是 `base`。
+* `base`: `embed_dim=768`, `num_heads=12`。
+* `small`: `embed_dim=384`, `num_heads=6`。
+
+
+* **Patch 形狀 (fshape, tshape)**：通常為 `16*16`。若訓練時有變動，推論的 `PatchEmbed` 必須跟進。
+* **步長 (fstride, tstride)**：
+* **預訓練版**：通常 `stride == shape`（無重疊）。
+* **微調/預測版**：通常使用 `stride=10`（有重疊）來增加解析度。這會直接改變 `pos_embed` 的長度（例如從 514 變成 1214）。
+
+
+
+### 2. 聲學特徵規格 (Acoustic Features)
+
+這是最容易出錯的地方，模型對於數值的「分布」極其敏感。
+
+* **取樣率 (Sample Rate)**：必須固定為 **16,000 Hz**。
+* **Mel Bins**：固定為 **128**。
+* **窗函數與偏移**：`window_type='hanning'`, `frame_shift=10`。
+* **目標長度 (Target Length)**：必須與訓練時的 `target_length` 一致（如 1024 幀，即 10.24 秒）。長度不足需補零，過長需裁剪。
+
+### 3. 歸一化標準 (Normalization)
+
+如果你更換了訓練資料集，這些數值**必須**重新計算並更新至預測腳本中。
+
+* **Mean & Std**：確保使用該版本訓練時設定的 `--dataset_mean` 與 `--dataset_std`。
+* **公式一致性**：推論公式應為 。請移除先前測試碼中可能存在的 `* 2` 縮放倍率，除非訓練時確實有加。
+
+### 4. 資料軸向與轉置 (Tensors Dimension)
+
+SSAST 在不同階段對維度的期待不同，務必檢查模型 `forward` 函式。
+
+* **輸入形狀**：進入模型 `forward` 前應為 `[Batch, Time, Freq]`。
+* **內部轉置**：模型內部會執行 `x.unsqueeze(1)` 並 `transpose(2, 3)` 轉換為 `[Batch, 1, Freq, Time]` 以進行捲積運算。
+
+### 5. 標籤與權重管理 (Management)
+
+* **標籤索引 (Label Map)**：推論時讀取的 `class_labels_indices.csv` 順序必須與訓練時完全相同，否則預測結果會張冠李戴。
+* **權重清理 (State Dict)**：載入 `.pth` 時需自動過濾 `module.` 前綴以及非推論用的 Key（如 `cpred`, `gpred`, `v.head`）。
+
+---
+
+## 建議操作流程
+
+當你跑完新一版訓練後，請將新產生的 **Mean/Std** 和 **pth 檔案** 更新到預測腳本，並優先拿 **10 筆訓練集資料** 進行檢測。若 Label 仍為 None，請優先檢查歸一化公式是否導致數值過小。

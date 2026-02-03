@@ -1,0 +1,37 @@
+/var/spool/slurm/d/job867025/slurm_script: line 12: model: command not found
+Lmod has detected the following error: The following module(s) are unknown:
+"singularity"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "singularity"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+usage: run.py [-h] [--data_train DATA_TRAIN] [--data_val DATA_VAL]
+              [--data_eval DATA_EVAL] [--label-csv LABEL_CSV]
+              [--n_class N_CLASS] [--dataset DATASET]
+              [--dataset_mean DATASET_MEAN] [--dataset_std DATASET_STD]
+              [--target_length TARGET_LENGTH] [--num_mel_bins NUM_MEL_BINS]
+              [--exp-dir EXP_DIR] [--lr LR] [--warmup WARMUP]
+              [--optim {sgd,adam}] [-b N] [-w NW] [--n-epochs N_EPOCHS]
+              [--lr_patience LR_PATIENCE] [--adaptschedule ADAPTSCHEDULE]
+              [--n-print-steps N_PRINT_STEPS] [--save_model SAVE_MODEL]
+              [--freqm FREQM] [--timem TIMEM] [--mixup MIXUP] [--bal BAL]
+              [--fstride FSTRIDE] [--tstride TSTRIDE] [--fshape FSHAPE]
+              [--tshape TSHAPE] [--model_size MODEL_SIZE]
+              [--task {ft_avgtok,ft_cls,pretrain_mpc,pretrain_mpg,pretrain_joint}]
+              [--mask_patch MASK_PATCH] [--cluster_factor CLUSTER_FACTOR]
+              [--epoch_iter EPOCH_ITER]
+              [--pretrained_mdl_path PRETRAINED_MDL_PATH] [--head_lr HEAD_LR]
+              [--noise NOISE] [--metrics {mAP,acc}]
+              [--lrscheduler_start LRSCHEDULER_START]
+              [--lrscheduler_step LRSCHEDULER_STEP]
+              [--lrscheduler_decay LRSCHEDULER_DECAY] [--wa WA]
+              [--wa_start WA_START] [--wa_end WA_END] [--loss {BCE,CE}]
+              [--dataset_root DATASET_ROOT] [--data_dir DATA_DIR]
+              [--data_val_dir DATA_VAL_DIR]
+run.py: error: unrecognized arguments: --weight_decay 0.05 --warmup_steps 10000
